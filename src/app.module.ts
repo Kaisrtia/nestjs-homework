@@ -26,6 +26,7 @@ import { UnprocessableEntityExceptionFilter } from '@core/filters/unprocess-enti
 import { OrderModule } from '@modules/order/order.module';
 import { DemoModule } from './modules/demo/demo.module';
 import { PostModule } from './modules/post/post.module';
+import { TasksModule } from './modules/tasks/tasks.module';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { PostModule } from './modules/post/post.module';
     UserModule,
     OrderModule,
     PostModule,
+    TasksModule,
     DemoModule,
     ConfigModule.forRoot({
       isGlobal: true,
